@@ -1,0 +1,22 @@
+﻿@page "/datetime"
+<link href="css/main.css" rel="stylesheet" />
+
+<div class="datetime-page container">
+    <h3>Current Date and Time</h3>
+    <p>The current time is: @currentTime</p>
+    <button class="btn btn-secondary" @onclick="UpdateTime">Update Time</button>
+</div>
+
+@code {
+    private string currentTime;
+
+    protected override void OnInitialized()
+    {
+        currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+    }
+
+    private void UpdateTime()
+    {
+        currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+    }
+}

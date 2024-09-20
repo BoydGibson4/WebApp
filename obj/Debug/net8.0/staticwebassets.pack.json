@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\obj\\Debug\\net8.0\\compressed\\59v581o69b.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FirstWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FirstWebsite.props",
+      "PackagePath": "build\\FirstWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstWebsite.props",
+      "PackagePath": "buildMultiTargeting\\FirstWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FirstWebsite.props",
+      "PackagePath": "buildTransitive\\FirstWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

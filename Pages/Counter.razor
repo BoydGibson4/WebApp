@@ -1,0 +1,9 @@
+﻿@page "/counter"
+<link href="css/main.css" rel="stylesheet" />
+
+<div class="counter-page container">
+    <h3>Interactive Counter</h3>
+    <p>Click the button below to increase the counter:</p>
+    <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    <p class="counter">Current count: @currentCount</p>
+</div>

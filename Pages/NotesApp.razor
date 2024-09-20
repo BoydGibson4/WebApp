@@ -1,0 +1,53 @@
+﻿@page "/notes"
+<link href="css/main.css" rel="stylesheet" />
+<div class="main-container">
+    <header class="header">
+        <h1>Blazor Notes App</h1>
+    </header>
+
+    <section class="notes-section">
+        <h2>Create a New Note</h2>
+
+        <form class="note-form">
+            <label>Title:</label>
+            <input type="text" @bind="newNoteTitle" placeholder="Note title" />
+
+            <label>Content:</label>
+            <textarea @bind="newNoteContent" placeholder="Note content"></textarea>
+
+            <label>Category/Tag:</label>
+            <input type="text" @bind="newNoteTag" placeholder="Tag (e.g., Work, Personal)" />
+
+            <button type="button" class="btn btn-primary" @onclick="AddNote">Add Note</button>
+        </form>
+
+        <hr />
+
+        <section class="search-section">
+            <input type="text" placeholder="Search notes..." @bind="searchQuery" class="search-input" />
+        </section>
+
+        <section class="notes-display">
+            <h2>Your Notes</h2>
+
+            @if (filteredNotes.Count == 0)
+            {
+                <p>No notes found. Create a new note!</p>
+            }
+            else
+            {
+                foreach (var note in filteredNotes)
+                {
+                    <div class="note-card">
+                        <h3>@note.Title</h3>
+                        <p>@note.Content</p>
+                        <small>@note.Tag</small>
+
+                        <button @onclick="() => EditNote(note.Id)" class="btn btn-secondary">Edit</button>
+                        <button @onclick="() => DeleteNote(note.Id)" class="btn btn-danger">Delete</button>
+                    </div>
+                }
+            }
+        </section>
+    </section>
+</div>
