@@ -1,58 +1,59 @@
-﻿@page "/"
-<link href="css/main.css" rel="stylesheet" />
+﻿@page "/"  
+@* Defines the route for the home page, accessible at the root URL *@
 
-<div class="hero">
-    <h2>Revolutionize Your Digital Experience</h2>
-    <p>Experience the future of web development with a cutting-edge, premium Blazor solution.</p>
-    <a class="btn btn-primary" @onclick="@(() => ScrollToSection("services"))">Learn More</a>
+<link href="css/main.css" rel="stylesheet" />  @* Links to the external CSS stylesheet for styling *@
+
+<div class="hero">  @* Hero section for the main call to action *@
+    <h2>Revolutionize Your Digital Experience</h2>  @* Main heading for the hero section *@
+    <p>Experience the future of web development with a cutting-edge, premium Blazor solution.</p>  @* Subheading that describes the service *@
+    <a class="btn btn-primary" @onclick="@(() => ScrollToSection("services"))">Learn More</a>  @* Button to scroll to the services section *@
 </div>
 
-<section class="features" id="services">
-    <h3>Our Services</h3>
-    <div class="feature-cards">
-        <a href="/notes" class="feature-card">
-            <h4>Notes</h4>
-            <p>Effortlessly create and save your thoughts for easy access anytime.</p>
+<section class="features" id="services">  @* Section displaying services offered, with an ID for scrolling *@
+    <h3>Our Services</h3>  @* Heading for the services section *@
+    <div class="feature-cards">  @* Container for the individual service cards *@
+        <a href="/notes" class="feature-card">  @* Link to the Notes feature *@
+            <h4>Notes</h4>  @* Title for the Notes service *@
+            <p>Effortlessly create and save your thoughts for easy access anytime.</p>  @* Description for the Notes service *@
         </a>
-        <a href="/datetime" class="feature-card">
-            <h4>Current Time</h4>
-            <p>Stay on track with the current time at a glance, wherever you are.</p>
+        <a href="/datetime" class="feature-card">  @* Link to the Current Time feature *@
+            <h4>Current Time</h4>  @* Title for the Current Time service *@
+            <p>Stay on track with the current time at a glance, wherever you are.</p>  @* Description for the Current Time service *@
         </a>
-        <a href="/quote" class="feature-card">
-            <h4>Inspirational Quotes</h4>
-            <p>Get your daily dose of motivation with random inspirational quotes.</p>
+        <a href="/quote" class="feature-card">  @* Link to the Inspirational Quotes feature *@
+            <h4>Inspirational Quotes</h4>  @* Title for the Quotes service *@
+            <p>Get your daily dose of motivation with random inspirational quotes.</p>  @* Description for the Quotes service *@
         </a>
-        <a href="/counter" class="feature-card">
-            <h4>Counter</h4>
-            <p>Simple and fun click counter to track whatever needs counting.</p>
+        <a href="/counter" class="feature-card">  @* Link to the Counter feature *@
+            <h4>Counter</h4>  @* Title for the Counter service *@
+            <p>Simple and fun click counter to track whatever needs counting.</p>  @* Description for the Counter service *@
         </a>
     </div>
 </section>
 
-
-<section class="testimonials">
-    <h3>What Our Clients Say</h3>
-    <blockquote>
-        <p>"The team at Tanar Solutions exceeded our expectations! Our website has never looked better."</p>
-        <footer>- Happy Client</footer>
+<section class="testimonials">  @* Section for client testimonials *@
+    <h3>What Our Clients Say</h3>  @* Heading for the testimonials section *@
+    <blockquote>  @* Block for the first testimonial *@
+        <p>"The team at Tanar Solutions exceeded our expectations! Our website has never looked better."</p>  @* Testimonial content *@
+        <footer>- Happy Client</footer>  @* Attribution for the testimonial *@
     </blockquote>
-    <blockquote>
-        <p>"Fantastic service! Our business has grown significantly since the redesign."</p>
-        <footer>- Satisfied Customer</footer>
+    <blockquote>  @* Block for the second testimonial *@
+        <p>"Fantastic service! Our business has grown significantly since the redesign."</p>  @* Testimonial content *@
+        <footer>- Satisfied Customer</footer>  @* Attribution for the testimonial *@
     </blockquote>
 </section>
 
-<section class="cta">
-    <h3>Ready to Get Started?</h3>
-    <p>Contact us today for a free consultation and see how we can help your business thrive.</p>
-    <a href="/contact" class="btn btn-primary">Get in Touch</a>
+<section class="cta">  @* Call to action section to encourage user engagement *@
+    <h3>Ready to Get Started?</h3>  @* Heading for the call to action *@
+    <p>Contact us today for a free consultation and see how we can help your business thrive.</p>  @* Subtext for the call to action *@
+    <a href="/contact" class="btn btn-primary">Get in Touch</a>  @* Button to link to the contact page *@
 </section>
 
 @code {
-    [Inject] private IJSRuntime JS { get; set; }
+    [Inject] private IJSRuntime JS { get; set; }  @* Dependency injection for JavaScript runtime *@
 
-    private async Task ScrollToSection(string sectionId)
+    private async Task ScrollToSection(string sectionId)  @* Method to scroll to a specified section *@
     {
-        await JS.InvokeVoidAsync("smoothScrollToElement", sectionId);
+        await JS.InvokeVoidAsync("smoothScrollToElement", sectionId);  @* Invokes a JavaScript function to smooth scroll to the section *@
     }
 }

@@ -1,50 +1,53 @@
-﻿@page "/notes"
-<link href="css/main.css" rel="stylesheet" />
-<div class="main-container">
+﻿@page "/notes"  
+@* Defines the route for this component, accessible at /notes *@
+
+<link href="css/main.css" rel="stylesheet" />  @* Links to the external CSS stylesheet for styling *@
+
+<div class="main-container">  @* Main container for the notes application *@
     <header class="header">
-        <h1>Blazor Notes App</h1>
+        <h1>Blazor Notes App</h1>  @* Header for the application title *@
     </header>
 
-    <section class="notes-section">
-        <h2>Create a New Note</h2>
+    <section class="notes-section">  @* Section for creating and displaying notes *@
+        <h2>Create a New Note</h2>  @* Subtitle for the note creation section *@
 
-        <form class="note-form">
+        <form class="note-form">  @* Form for entering new note details *@
             <label>Title:</label>
-            <input type="text" @bind="newNoteTitle" placeholder="Note title" />
+            <input type="text" @bind="newNoteTitle" placeholder="Note title" />  @* Input for note title *@
 
             <label>Content:</label>
-            <textarea @bind="newNoteContent" placeholder="Note content"></textarea>
+            <textarea @bind="newNoteContent" placeholder="Note content"></textarea>  @* Input for note content *@
 
             <label>Category/Tag:</label>
-            <input type="text" @bind="newNoteTag" placeholder="Tag (e.g., Work, Personal)" />
+            <input type="text" @bind="newNoteTag" placeholder="Tag (e.g., Work, Personal)" />  @* Input for note tag or category *@
 
-            <button type="button" class="btn btn-primary" @onclick="AddNote">Add Note</button>
+            <button type="button" class="btn btn-primary" @onclick="AddNote">Add Note</button>  @* Button to add the note *@
         </form>
 
-        <hr />
+        <hr />  @* Horizontal line for separation *@
 
-        <section class="search-section">
-            <input type="text" placeholder="Search notes..." @bind="searchQuery" class="search-input" />
+        <section class="search-section">  @* Section for searching notes *@
+            <input type="text" placeholder="Search notes..." @bind="searchQuery" class="search-input" />  @* Input for search query *@
         </section>
 
-        <section class="notes-display">
-            <h2>Your Notes</h2>
+        <section class="notes-display">  @* Section for displaying the notes *@
+            <h2>Your Notes</h2>  @* Subtitle for the notes display section *@
 
-            @if (filteredNotes.Count == 0)
+            @if (filteredNotes.Count == 0)  @* Conditional rendering based on the number of filtered notes *@
             {
-                <p>No notes found. Create a new note!</p>
+                <p>No notes found. Create a new note!</p>  @* Message when no notes are available *@
             }
             else
             {
-                foreach (var note in filteredNotes)
+                foreach (var note in filteredNotes)  @* Loop through each filtered note *@
                 {
-                    <div class="note-card">
-                        <h3>@note.Title</h3>
-                        <p>@note.Content</p>
-                        <small>@note.Tag</small>
+                    <div class="note-card">  @* Container for individual note *@
+                        <h3>@note.Title</h3>  @* Display note title *@
+                        <p>@note.Content</p>  @* Display note content *@
+                        <small>@note.Tag</small>  @* Display note tag *@
 
-                        <button @onclick="() => EditNote(note.Id)" class="btn btn-secondary">Edit</button>
-                        <button @onclick="() => DeleteNote(note.Id)" class="btn btn-danger">Delete</button>
+                        <button @onclick="() => EditNote(note.Id)" class="btn btn-secondary">Edit</button>  @* Button to edit the note *@
+                        <button @onclick="() => DeleteNote(note.Id)" class="btn btn-danger">Delete</button>  @* Button to delete the note *@
                     </div>
                 }
             }

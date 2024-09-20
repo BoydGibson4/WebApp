@@ -1,19 +1,23 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;  // Importing the necessary namespace for Blazor components
 
-namespace FirstWebsite.Pages
+namespace FirstWebsite.Pages  // Defining the namespace for the DateTime page
 {
-    public partial class DateTimePage : ComponentBase // Ensure it inherits from ComponentBase
+    public partial class DateTimePage : ComponentBase  // Partial class for the DateTime component, inheriting from ComponentBase
     {
-        private string currentTime; // This variable holds the current time
+        private string currentTime;  // Variable to hold the current time as a string
 
-        protected override void OnInitialized()
+        // This method is called when the component is initialized
+        protected override void OnInitialized()  
         {
-            currentTime = System.DateTime.Now.ToString("HH:mm:ss"); // Using System.DateTime
+            // Set the currentTime variable to the current time formatted as "HH:mm:ss"
+            currentTime = System.DateTime.Now.ToString("HH:mm:ss"); 
         }
 
-        private void UpdateTime()
+        // Method to update the current time
+        private void UpdateTime()  
         {
-            currentTime = System.DateTime.Now.ToString("HH:mm:ss"); // Using System.DateTime
+            // Update the currentTime variable to the new current time
+            currentTime = System.DateTime.Now.ToString("HH:mm:ss"); 
         }
     }
 }

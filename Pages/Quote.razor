@@ -1,8 +1,10 @@
-﻿@page "/quote"
-<link href="css/main.css" rel="stylesheet" />
+﻿@page "/quote"  
+@* Defines the route for this component, accessible at /quote *@
 
-<div class="quote-page container">
-    <h3>Inspirational Quote</h3>
-    <p>@randomQuote</p>
-    <button class="btn btn-secondary" @onclick="GenerateRandomQuote">Get Another Quote</button>
+<link href="css/main.css" rel="stylesheet" />  @* Links to the external CSS stylesheet for styling *@
+
+<div class="quote-page container">  @* Main container for the quote page *@
+    <h3>Inspirational Quote</h3>  @* Header for the quote section *@
+    <p>@randomQuote</p>  @* Displays the current random quote from the C# property randomQuote *@
+    <button class="btn btn-secondary" @onclick="GenerateRandomQuote">Get Another Quote</button>  @* Button to generate a new quote *@
 </div>

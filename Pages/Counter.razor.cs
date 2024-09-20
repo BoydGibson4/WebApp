@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;  // Importing the necessary namespace for Blazor components
 
-namespace FirstWebsite.Pages
+namespace FirstWebsite.Pages  // Defining the namespace for the Counter page
 {
-    public partial class Counter
+    public partial class Counter  // Partial class for the Counter component
     {
-        private int currentCount = 0;
+        private int currentCount = 0;  // Field to store the current count, initialized to zero
 
-        private void IncrementCount()
+        // Method to increment the current count
+        private void IncrementCount()  
         {
-            currentCount++;
+            currentCount++;  // Increases the value of currentCount by one each time this method is called
         }
     }
 }

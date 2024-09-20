@@ -1,22 +1,23 @@
-﻿@page "/datetime"
-<link href="css/main.css" rel="stylesheet" />
+﻿@page "/datetime"  
+@* Defines the route for the DateTime page, accessible at /datetime *@
+<link href="css/main.css" rel="stylesheet" />  @* Links to the external CSS stylesheet for styling *@
 
-<div class="datetime-page container">
-    <h3>Current Date and Time</h3>
-    <p>The current time is: @currentTime</p>
-    <button class="btn btn-secondary" @onclick="UpdateTime">Update Time</button>
+<div class="datetime-page container">  @* Container for the DateTime page content *@
+    <h3>Current Date and Time</h3>  @* Heading for the current date and time section *@
+    <p>The current time is: @currentTime</p>  @* Displays the current time, bound to the currentTime variable *@
+    <button class="btn btn-secondary" @onclick="UpdateTime">Update Time</button>  @* Button to update the displayed time *@
 </div>
 
 @code {
-    private string currentTime;
+    private string currentTime;  @* Variable to hold the current time as a string *@
 
-    protected override void OnInitialized()
+    protected override void OnInitialized()  @* Lifecycle method called when the component is initialized *@
     {
-        currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+        currentTime = System.DateTime.Now.ToString("HH:mm:ss");  @* Initializes currentTime with the current time formatted as HH:mm:ss *@
     }
 
-    private void UpdateTime()
+    private void UpdateTime()  @* Method to update the current time *@
     {
-        currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+        currentTime = System.DateTime.Now.ToString("HH:mm:ss");  @* Updates currentTime with the latest time formatted as HH:mm:ss *@
     }
 }

@@ -2064,11 +2064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\FirstWebsite.csproj",
+      "projectUniqueName": "C:\\Users\\Boyd\\Desktop\\WebApp\\FirstWebsite.csproj",
       "projectName": "FirstWebsite",
-      "projectPath": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\FirstWebsite.csproj",
+      "projectPath": "C:\\Users\\Boyd\\Desktop\\WebApp\\FirstWebsite.csproj",
       "packagesPath": "C:\\Users\\Boyd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Boyd\\source\\repos\\FirstWebsite\\FirstWebsite\\obj\\",
+      "outputPath": "C:\\Users\\Boyd\\Desktop\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Boyd\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,47 +13,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = FirstWebsite
 build_property.RootNamespace = FirstWebsite
-build_property.ProjectDir = C:\Users\Boyd\source\repos\FirstWebsite\FirstWebsite\
+build_property.ProjectDir = C:\Users\Boyd\Desktop\WebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Boyd\source\repos\FirstWebsite\FirstWebsite
+build_property.MSBuildProjectDirectory = C:\Users\Boyd\Desktop\WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/App.razor]
+[C:/Users/Boyd/Desktop/WebApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Layout/MainLayout.razor]
+[C:/Users/Boyd/Desktop/WebApp/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/Contact.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/Counter.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/DateTime.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/DateTime.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0ZVRpbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/Home.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/NotesApp.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/NotesApp.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90ZXNBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/Pages/Quote.razor]
+[C:/Users/Boyd/Desktop/WebApp/Pages/Quote.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVvdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyd/source/repos/FirstWebsite/FirstWebsite/_Imports.razor]
+[C:/Users/Boyd/Desktop/WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
